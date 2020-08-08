@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>corona tracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.one{
+ font-style: italic;
+ font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+ height: 50px;
+}
+.two{
+  
+ font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+ color:red
+}
+.three{
+  
+ font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+ color:blue
+}
+.four{
+  
+ font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+ color:green;
+}
+.five{
+  
+ font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+ color:tomato
+}.six{
+  font-family:Lucidatypewriter, monospace;
+ font-weight: bold;
+ font-size: 17px;
+}
+</style>
+</head>
+<body style="background-color:whitesmoke;">
+
+  <div>
+    <h1 style="text-align: center;font-style: italic;font-family:Florence, cursive;font-weight: bold;">CORONA TRACKER</h1>
+    <hr style="border-bottom: solid 2px black;">
+    <button type="button" class="btn btn-success" id="get" style="position: relative;left:90%;top:-75px;height:50px;width:120px;font-style: italic;font-family:Florence, cursive;" onclick="refresh()">REFRESH</button>
+  </div>
+ 
+  <div>
+<label style="color:red;font-family:Lucidatypewriter, monospace;position: relative;left:490px;font-size: 18px;">CONFIRMED
+<p id="co"></p></label>
+</div>
+  
+<div>
+  <label style="color:blue;font-family:Lucidatypewriter, monospace;position: relative;left:150px;bottom:78px;left:655px;font-size: 18px;">ACTIVE
+  <p id="ac"></p></label>
+  </div>
+
+  <div>
+    <label style="color:green;font-family:Lucidatypewriter, monospace;position: relative;left:300px;bottom:155px;left:790px;font-size: 18px;">RECOVERED</h5>
+    <p id="re"></p></label>
+    </div>
+
+    <div>
+      <label style="color:darkgray;font-family:Lucidatypewriter, monospace;position: relative;left:970px;bottom:235px;font-size: 18px;">DEATHS</h5>
+      <p id="de"></p></label>
+      </div>
+
+  <div>
+      <table border="3" id="tab" style="text-align: center;position: relative;left:200px;margin-top:-220px;background-color: whitesmoke;">
+<tr >
+  <th style="width:250px;font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;height:30px;">STATE</th>
+  <th style="width:150px;font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;color: red;">CONFIRMED</th>
+  <th style="width:150px;font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;color:blue">ACTIVE</th>
+  <th style="width:150px;font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;color:green">RECOVERED</th>
+  <th style="width:150px;font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;color:tomato">DEATHS</th>
+  <th style="font-style: italic;font-family:New Century Schoolbook, serif;font-size: 22px;font-weight: bold;">LAST UPDATED</th>
+  
+</tr>
+      </table>
+      </div>
+  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </html>
